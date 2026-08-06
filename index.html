@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BCM Pro — Thanh Thanh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand"><span>TT</span><div><b>Thanh Thanh</b><small>IMPACT CONTRIBUTOR</small></div></div>
+    <nav><button class="nav active"><i>◆</i><span>Lõi kinh doanh</span></button></nav>
+    <div class="side-foot"><div class="avatar">TT</div><div><b>Đặng Thanh Thanh</b><small>Dữ liệu được lưu tự động</small></div></div>
+  </aside>
+  <main>
+    <header class="topbar"><button class="mobile-menu" aria-label="Mở menu">☰</button><div class="crumb">Quản trị <span>/</span> <b>Lõi kinh doanh</b></div><label class="search">⌕ <input id="search" placeholder="Tìm sản phẩm, persona, insight..." /></label><button class="icon-btn" id="dataManager" title="Quản lý dữ liệu">⚙</button></header>
+    <div class="page">
+      <section class="hero"><div><div class="eyebrow">BCM PRO • BỘ NÃO DỮ LIỆU SỐNG</div><h1>Lõi kinh doanh</h1><p>Nguồn dữ liệu trung tâm giúp website và các công cụ AI hiểu đúng thương hiệu <b>Thanh Thanh - Impact Contributor.</b></p></div><div class="actions"><button class="btn secondary" data-action="import">↥ Nạp dữ liệu</button><button class="btn secondary" data-action="add">＋ Thêm mới</button><button class="btn ai" data-action="ai">✦ Cập nhật bằng AI</button><button class="btn primary" data-tab="export">Lấy dữ liệu →</button></div></section>
+      <nav class="tabs" aria-label="Các khu vực BCM"><button class="active" data-tab="overview">Tổng quan</button><button data-tab="products">Sản phẩm & Offer</button><button data-tab="personas">Khách hàng & Insight</button><button data-tab="journey">Hành trình</button><button data-tab="messages">Thông điệp & Bằng chứng</button><button data-tab="export">Lấy dữ liệu</button></nav>
+      <div id="content"></div>
+    </div>
+  </main>
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="drawer"><div class="drawer-head"><div><small>TRUNG TÂM DỮ LIỆU</small><h2>Quản lý dữ liệu</h2></div><button class="close" aria-label="Đóng">×</button></div><div class="drawer-tabs"><button class="active">Nguồn dữ liệu</button><button>Nạp dữ liệu</button><button>Chất lượng</button><button>Lịch sử</button></div><div class="drawer-body" id="drawerBody"></div></aside>
+  <div class="modal" id="modal" role="dialog" aria-modal="true"><div class="modal-head"><div><small id="modalKicker">CẬP NHẬT DỮ LIỆU</small><h2 id="modalTitle">Cập nhật bằng AI</h2></div><button class="close" aria-label="Đóng">×</button></div><div id="modalBody"></div></div>
+  <div class="toast" id="toast">Đã lưu thay đổi</div>
+  <script src="app.js"></script>
+</body></html>
